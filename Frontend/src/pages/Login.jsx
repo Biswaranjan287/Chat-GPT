@@ -21,7 +21,7 @@ const Login = () => {
 
         console.log(form);
 
-        axios.post("https://cohort-1-project-chat-gpt.onrender.com/api/auth/login", {
+        axios.post("https://chat-gpt-vcry.onrender.com/api/auth/login", {
             email: form.email,
             password: form.password
         },
