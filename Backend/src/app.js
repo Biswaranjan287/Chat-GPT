@@ -1,14 +1,17 @@
 const express = require('express');
 const cookieParser = require('cookie-parser');
-
+const cors = require('cors');
 
 /* Routes */
 const authRoutes = require('./routes/auth.routes');
 const chatRoutes = require('./routes/chat.routes');
 
 
-/* Using middlewares */
 const app = express()
+
+
+/* Using middlewares */
+app.use(cors())
 app.use(express.json())
 app.use(cookieParser())
 
